@@ -96,7 +96,7 @@ const AboutUs = () => {
           )}
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap:20 lg:w-[80%] mx-auto px-6 mt-16 lg:mt-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap:20 lg:w-[80%] gap-20 mx-auto px-6 mt-16 lg:mt-24">
         <div className="lg:pt-20">
           <div className="text-3xl text-zinc-700 font-semibold">
             Why choose Grandel
@@ -104,17 +104,14 @@ const AboutUs = () => {
           <div className="text-zinc-400 pt-2 text-2xl ">
             We’re Your Partner in Your Success
           </div>
-          <div className="pt-4">
-            {Array.from(Array(5)).map((i, index) => (
-              <div className="flex py-2" key={index}>
-                <div className="pt-1">
-                  <BsCheck color="lawngreen" />
-                </div>
-                <div className="text-zinc-700 pl-2 ">
-                  Distinctive Experts That Provide Effortless Expertise
-                </div>
-              </div>
-            ))}
+          <div className="pt-4 text-zinc-600">
+            At Grandel Investment and Tech, we create sustained value added for
+            our clients: We carefully observe the financial markets and
+            interprete global macroeconomic developments. At GIT, our
+            relationship with our clients and business partners is built on
+            performance and trust. We also help our clients to make the best
+            data driven business to ensure growth and profitability. You can
+            count on us today for a better future.
           </div>
         </div>
         <div className="h-[400px] mt-10 lg:pt-0 bg-white border-4 border-zinc-200 drop-shadow-md rounded-lg overflow-hidden  animate__animated animate__fadeInLeft">

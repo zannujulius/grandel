@@ -97,11 +97,16 @@ const Service = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6 mt-10 justify-items-center">
+      <div
+        className="grid grid-cols-1 gap-14 lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6 mt-10 justify-items-center"
+        id="service"
+      >
         {serviceData.map((i) => (
           <div className="" key={i.id}>
             <div className="text-green-400 text-lg text-left">{i.tag}</div>
-            <div className="text-zinc-700 text-2xl">{i.title}</div>
+            <div className="text-zinc-700 text-2xl font-semibold">
+              {i.title}
+            </div>
             <div className="">{i.content}</div>
           </div>
         ))}

@@ -4,7 +4,7 @@ import { BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="w-full px-8 py-6 lg:p-16 ">
+    <div className="w-full px-8 py-6 lg:p-16 mt-16">
       <div className="w-90% lg:w-[85%] mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-16">
           <div className="">
@@ -44,34 +44,34 @@ const Footer = () => {
               About
             </Link>
             <Link
-              to="/services"
+              to="/service"
               className="py-2 cursor-pointer pr-8 flex align-center pr mt-1 font-normal text-md text-zinc-600"
             >
               Services
             </Link>
           </div>
           <div className="">
-            <div className="font-bold text-zinc-700 text-lg">Quick Links</div>
+            <div className="font-bold text-zinc-700 text-lg">Serivces</div>
             <div>
-              <Link
-                to="/"
-                className="py-1 cursor-pointer pr-8  pr mt-2 block font-light text-lg text-zinc-700"
+              <a
+                href="/service#service"
+                className="py-1 cursor-pointer pr-8  pr mt-2 block font-normal text-lg text-zinc-600"
               >
-                Home
-              </Link>
-              <Link
-                to="/solutions"
-                className=" py-1 cursor-pointer pr-8  pr mt-2 block font-light text-lg text-zinc-700"
+                Data Visualization
+              </a>
+              <a
+                href="/service#service"
+                className="py-1 cursor-pointer pr-8  pr mt-2 block font-normal text-lg text-zinc-600"
               >
-                Solutions
-              </Link>
-              <Link
-                to="/about"
-                className=" py-1 hidden cursor-pointer pr-8  pr mt-2  font-light text-lg text-zinc-700"
+                Reporting tools Implementation
+              </a>
+              <a
+                href="/service#service"
+                className="py-1 cursor-pointer pr-8  pr mt-2 block font-normal text-lg text-zinc-600"
               >
-                About
-              </Link>
-              <Link className=" hidden py-1 cursor-pointer pr-8  pr mt-2  font-light text-lg text-zinc-700">
+                Analytical Maturity Assessment
+              </a>
+              <Link className=" hidden py-1 cursor-pointer pr-8  pr mt-2  font-normal text-lg text-zinc-600">
                 Contact Us
               </Link>
             </div>

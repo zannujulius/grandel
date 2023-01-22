@@ -6,6 +6,8 @@ import { GrAnalytics } from "react-icons/gr";
 import { MdOutlineAnalytics } from "react-icons/md";
 import Interested from "../../components/Interested";
 import { Link } from "react-router-dom";
+import { homeData } from "./data";
+import { Bg } from "../../assets/svg";
 const Home = () => {
   const Slider = () => {
     return (
@@ -49,8 +51,9 @@ const Home = () => {
   return (
     <Layout className="">
       {/* hero */}
-      <div className="pt-[150px] lg:pt-[200px] lg:h-[80vh]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap:20 lg:w-[80%] mx-auto px-6">
+      <div className="pt-[150px] lg:pt-[200px] lg:h-[80vh] relative overflow-hidden">
+        <Bg className="absolute lg:top-[-300px] right-[-100px] rotate-45 top-[-500px] " />
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap:20 lg:w-[80%] mx-auto px-6 ">
           <div className="">
             <div className="text-5xl leading-[60px] text-left md:text-center lg:text-left text-zinc-800 font-semibold">
               Make best financial investment with us at{" "}
@@ -75,7 +78,9 @@ const Home = () => {
         </div>
       </div>
       {/* Section */}
-      <div className="mt-32">
+      <div className="mt-32 relative overflow-hidden">
+        <Bg className="absolute top-[0px] left-[-800px]  lg:left-[-500px]" />
+
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6">
           <div className="mt-10 lg:mt-0">
             <div className="h-[500px] bg-white drop-shadow-sm border rounded-lg border-teal-500"></div>
@@ -86,14 +91,15 @@ const Home = () => {
               <span className="text-green-400">Data & Financial expert</span>
             </h1>
             <div className="pt-4 text-zinc-600 text-left md:text-center lg:text-left ">
-              Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna.
+              At Grandel Investment and Tech, we create sustained value added
+              for our clients: We carefully observe the financial markets and
+              interprete global macroeconomic developments.
             </div>
             <div className="pt-4 text-zinc-600 text-left md:text-center lg:text-left">
-              At vero eos et accusam et justo duo dolores et ea rebum. Stet
-              gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet
-              ipsumlor eut consetetur sadipscing elitr, sed diam nonumy eirmod
-              tempor invidunt labore et dolore magna liquyam erat.
+              At GIT, our relationship with our clients and business partners is
+              built on performance and trust. We also help our clients to make
+              the best data driven business to ensure growth and profitability.
+              You can count on us today for a better future
             </div>
             <div className="pt-10">
               <div className="bg-green-400 text-white px-8 py-4 rounded-[50px] w-[fit-content] ">
@@ -108,27 +114,19 @@ const Home = () => {
         <div className="text-center text-3xl text-zinc-900 pb-4 font-semibold">
           What we offer
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-20 lg:w-[80%] mx-auto px-6">
-          {Array.from(Array(3)).map((i, index) => (
-            <div key={index} className="my-8 py-6 shadow-sm bg-white px-2">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-10 lg:w-[80%] mx-auto px-6">
+          {homeData.map((i, index) => (
+            <div key={i.id} className="my-8 py-6 shadow-sm bg-white px-2">
               <div className="flex align-center justify-center">
-                <div className="w-[70px] h-[70px] rounded-tl-[40px] rounded-br-[20px] flex align-center justify-center bg-green-400 pt-4">
-                  <div className="">
-                    <MdOutlineAnalytics
-                      color="white"
-                      fill="white"
-                      stroke="white"
-                      size={35}
-                    />
-                  </div>
+                <div className="w-[70px] h-[70px] rounded-tl-[40px] rounded-br-[20px] flex align-center justify-center bg-green-400 pt-5">
+                  <div className="">{i.tag}</div>
                 </div>
               </div>
               <div className="text-zinc-800 text-[20px] cursor-pointer pt-4 text-center hover:text-green-600 transition-all ease font-semibold">
-                Business Development
+                {i.title}
               </div>
-              <div className="pt-2 text-center md:text-center lg:text-center text-zinc-600">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry
+              <div className="pt-2 text-center md:text-center lg:text-center text-zinc-600 ">
+                {i.content}
               </div>
             </div>
           ))}
