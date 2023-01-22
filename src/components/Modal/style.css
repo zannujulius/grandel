@@ -18,6 +18,10 @@
   animation: mobileslide 350ms ease;
 }
 
+.color {
+  color: #262626;
+}
+
 .modal-cover {
 }
 
