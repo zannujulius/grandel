@@ -2,6 +2,8 @@ import Layout from "../../components/Layout";
 import Button from "../../components/Button";
 import { Carousel } from "react-responsive-carousel";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
+import { GrAnalytics } from "react-icons/gr";
+import { MdOutlineAnalytics } from "react-icons/md";
 const Home = () => {
   const Slider = () => {
     return (
@@ -25,10 +27,10 @@ const Home = () => {
               <div className="flex pt-2">
                 {Array.from(Array(3)).map((i, index) => (
                   <div className="px-1 " key={index}>
-                    <BsStarFill color={"#d3d30b"} size={20} />
+                    <BsStarFill color={"yellow"} size={20} />
                   </div>
                 ))}
-                <BsStarHalf color={"#d3d30b"} size={20} />
+                <BsStarHalf color={"yellow"} size={20} />
               </div>
               <div className="flex align-center pt-4">
                 <div className="font-semibold text-zinc-700">
@@ -101,7 +103,16 @@ const Home = () => {
           {Array.from(Array(3)).map((i, index) => (
             <div key={index} className="my-8 py-6 shadow-sm bg-white px-2">
               <div className="flex align-center justify-center">
-                <div className="w-[80px] h-[80px] rounded-tl-[40px] rounded-br-[40px] bg-green-400"></div>
+                <div className="w-[70px] h-[70px] rounded-tl-[40px] rounded-br-[20px] flex align-center justify-center bg-green-400 pt-4">
+                  <div className="">
+                    <MdOutlineAnalytics
+                      color="white"
+                      fill="white"
+                      stroke="white"
+                      size={35}
+                    />
+                  </div>
+                </div>
               </div>
               <div className="text-zinc-800 text-[20px] cursor-pointer pt-4 text-center hover:text-green-600 transition-all ease font-semibold">
                 Business Development
@@ -122,17 +133,19 @@ const Home = () => {
       </div>
       <hr className="border-1 border-green-400 lg:w-[80%] mx-auto" />
       {/* Working  */}
-      <div className="mt-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6">
+      <div className="mt-32 px-6">
+        <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6 bg-gradient-to-r from-zinc-800 to-green-900 rounded-md p-8">
           <div className="">
-            <div className="text-2xl text-zinc-700 font-semibold">
+            <div className="text-3xl text-white font-semibold">
               Interested in working with us?
             </div>
-            <div className="pt-2 text-zinc-600">
+            <div className="pt-2 text-zinc-100">
               Hit the button below or give us a call!
             </div>
           </div>
-          <div className="text-center">+245235234252</div>
+          <div className="text-left pt-4  md:text-center  text-white text-4xl">
+            +(245)235234252
+          </div>
         </div>
       </div>
     </Layout>

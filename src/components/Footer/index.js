@@ -85,49 +85,20 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <div className="font-bold text-zinc-700 text-lg">Quick Links</div>
-            <div>
-              <Link
-                to="/"
-                className="py-1 cursor-pointer pr-8  pr mt-2 block font-light text-lg text-zinc-700"
-              >
-                Home
-              </Link>
-              <Link
-                to="/solutions"
-                className=" py-1 cursor-pointer pr-8  pr mt-2 block font-light text-lg text-zinc-700"
-              >
-                Solutions
-              </Link>
-              <Link
-                to="/about"
-                className=" py-1 hidden cursor-pointer pr-8  pr mt-2  font-light text-lg text-zinc-700"
-              >
-                About
-              </Link>
-              <Link className=" hidden py-1 cursor-pointer pr-8  pr mt-2  font-light text-lg text-zinc-700">
-                Contact Us
-              </Link>
+            <div className="">
+              <div className=""></div>
+              <div className="font-bold text-zinc-700 text-lg">About Us</div>
             </div>
-            <div className="hidden">
-              <div className="font-bold text-zinc-700 text-md pt-2">
-                About Us
-              </div>
-              <div className="flex">
-                <div className=" flex flex-row py-1 cursor-pointer pr-8  pr mt-2  font-light text-lg text-zinc-700">
-                  <AiFillPhone size={20} />
-                  <div> +2340919484903</div>
-                </div>
-                <div className="flex flex-row py-1 cursor-pointer pr-8  pr mt-2  font-light text-lg text-zinc-700">
-                  <AiFillMail size={20} />
-                  <div className="ml-2">enquiry@gmail.com</div>
-                </div>
-              </div>
+
+            <div className="font-normal text-zinc-700 py-2">
+              Lorem ipsum <br />
+              <a href="mailto=grandel@gmail.com">grandel@gmail.com</a>
             </div>
+            <div className="text-zinc-700 pt-2">Mon - Fri 8:00 - 17:00</div>
           </div>
         </div>
-        <div className="h-[2px] rounded-lg w-full bg-zinc-300 mt-2"></div>
-        <div className="text-sm text-zinc-700 font-light text-center pt-4">
+        <div className="h-[2px] rounded-lg w-full bg-zinc-300 mt-2 hidden"></div>
+        <div className="text-sm text-zinc-700 font-light text-center pt-4 hidden">
           Copyright 2022{" "}
           <span className="font-bold text-zinc-700">
             Greencrystal Engineering
