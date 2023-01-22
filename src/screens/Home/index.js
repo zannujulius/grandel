@@ -4,6 +4,7 @@ import { Carousel } from "react-responsive-carousel";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
 import { GrAnalytics } from "react-icons/gr";
 import { MdOutlineAnalytics } from "react-icons/md";
+import Interested from "../../components/Interested";
 const Home = () => {
   const Slider = () => {
     return (
@@ -133,19 +134,7 @@ const Home = () => {
       </div>
       <hr className="border-1 border-green-400 lg:w-[80%] mx-auto" />
       {/* Working  */}
-      <div className="mt-32 px-6">
-        <div className="grid grid-cols-1  lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6 bg-gradient-to-r from-zinc-800 to-green-900 rounded-md p-8">
-          <div className="">
-            <div className="text-3xl text-white font-semibold">
-              Interested in working with us?
-            </div>
-            <div className="pt-2 text-zinc-100">Send us a mail</div>
-          </div>
-          <div className="text-left pt-4  md:text-center  text-white text-4xl">
-            <a href="mailto:info@grandelng.com">info@grandelng.com</a>
-          </div>
-        </div>
-      </div>
+      <Interested />
     </Layout>
   );
 };

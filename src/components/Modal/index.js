@@ -6,19 +6,19 @@ const Modal = ({ closeModal }) => {
     <div className="modal-cover">
       <div className="modal-nav" style={{}}>
         <div
-          className="modal-container bg-white px-4 pt-4 pb-10"
+          className="modal-container bg-white px-6 pt-10 pb-10 "
           onClick={() => closeModal(false)}
         >
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <Link
                 to={"/"}
-                className="font-semibold text-lg text-zinc-700 pt-1"
+                className="font-bold text-2xl text-zinc-700 pt-1"
                 style={{
                   color: "",
                 }}
               >
-                Grandel
+                Grandel<span className="text-green-600 ">.</span>
               </Link>
             </div>
             <div className="cursor-pointer" onClick={() => closeModal(false)}>
@@ -29,7 +29,7 @@ const Modal = ({ closeModal }) => {
             <Link to="/" className="pr-5 block py-2 my-3">
               Home
             </Link>
-            <Link to="/services" className="pr-5 block py-2 my-3">
+            <Link to="/service" className="pr-5 block py-2 my-3">
               Services
             </Link>
             <Link to="/about" className="pr-5 block py-2 my-3">
