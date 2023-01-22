@@ -5,6 +5,7 @@ import { BsStarFill, BsStarHalf } from "react-icons/bs";
 import { GrAnalytics } from "react-icons/gr";
 import { MdOutlineAnalytics } from "react-icons/md";
 import Interested from "../../components/Interested";
+import { Link } from "react-router-dom";
 const Home = () => {
   const Slider = () => {
     return (
@@ -48,7 +49,7 @@ const Home = () => {
   return (
     <Layout className="">
       {/* hero */}
-      <div className="pt-[100px] lg:pt-[200px] lg:h-[80vh]">
+      <div className="pt-[150px] lg:pt-[200px] lg:h-[80vh]">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap:20 lg:w-[80%] mx-auto px-6">
           <div className="">
             <div className="text-5xl leading-[60px] text-left md:text-center lg:text-left text-zinc-800 font-semibold">
@@ -60,9 +61,12 @@ const Home = () => {
             </div>
 
             <div className="pt-10">
-              <div className="bg-green-400 text-white px-8 py-4 rounded-[50px] w-[fit-content]">
-                Schedule a demo
-              </div>
+              <Link
+                to="/service"
+                className="bg-green-400 text-white px-8 py-4 rounded-[50px] w-[fit-content]"
+              >
+                View Services
+              </Link>
             </div>
           </div>
           <div className="mt-10 lg:mt-0">
@@ -78,7 +82,8 @@ const Home = () => {
           </div>
           <div className="mt-10">
             <h1 className="font-semibold text-4xl text-zinc-800 text-left md:text-center lg:text-left">
-              We're a Agency Team & Digital Marketing
+              We are a team of{" "}
+              <span className="text-green-400">Data & Financial expert</span>
             </h1>
             <div className="pt-4 text-zinc-600 text-left md:text-center lg:text-left ">
               Lorem ipsum dolor sit amet, consetetur sadipscing esed diam nonumy
@@ -100,6 +105,9 @@ const Home = () => {
       </div>
       {/* Services */}
       <div className="mt-32">
+        <div className="text-center text-3xl text-zinc-900 pb-4 font-semibold">
+          What we offer
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-20 lg:w-[80%] mx-auto px-6">
           {Array.from(Array(3)).map((i, index) => (
             <div key={index} className="my-8 py-6 shadow-sm bg-white px-2">

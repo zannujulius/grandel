@@ -30,8 +30,15 @@ const Navbar = () => {
           <div className="w-[30px] hidden h-[30px] rounded-full overflow-hidden  items-center justify-center">
             {/* <img src={Logo} alt={"image"} className="" /> */}
           </div>
-          <div className="brand text-2xl font-bold mx-2 text-zinc-700">
-            Grandel<span className="text-green-600 ">.</span>
+          <div className="brand text-2xl font-bold mx-2 text-zinc-700 lg:hidden ">
+            GIT<span className="text-green-600 ">.</span>
+            {/* Grandel<span className="text-green-600 ">.</span> */}
+          </div>
+
+          <div className="brand text-2xl font-bold mx-2 text-zinc-700 hidden sm:hidden md:b lg:block ">
+            Grandel Investment And Tech
+            <span className="text-green-600 ">.</span>
+            {/* Grandel<span className="text-green-600 ">.</span> */}
           </div>
         </Link>
         <div className="flex flex-row items-center ">
