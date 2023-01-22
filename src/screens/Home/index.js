@@ -23,9 +23,9 @@ const Home = () => {
             <div className="w-[100px] h-[100px] rounded-full border-1 border-teal-800 bg-teal-700 hidden"></div>
             <div className="">
               <div className="text-left text-xl font-semibold leading-[40px] text-zinc-600">
-                <span className="font-semibold text-4xl">“</span> Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's{" "}
+                <span className="font-semibold text-4xl">“</span>ustry. Lorem
+                Ipsum has been the industry Lorem Ipsum is simply dummy text of
+                the printing and typesetting ind's{" "}
                 <span className="font-semibold text-4xl">”</span>
               </div>
               <div className="flex pt-2">
@@ -73,7 +73,14 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-10 lg:mt-0">
-            <div className="h-[400px] bg-white drop-shadow-sm border rounded-lg border-teal-500"></div>
+            <div className="h-[400px] bg-white drop-shadow-sm border rounded-lg border-teal-500 overflow-hidden">
+              <img
+                src={
+                  "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFkdmljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+                }
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -83,7 +90,14 @@ const Home = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6">
           <div className="mt-10 lg:mt-0">
-            <div className="h-[500px] bg-white drop-shadow-sm border rounded-lg border-teal-500"></div>
+            <div className="h-[500px] bg-white drop-shadow-sm border rounded-lg border-zinc-200 overflow-hidden">
+              <img
+                src={
+                  "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80"
+                }
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
           <div className="mt-10">
             <h1 className="font-semibold text-4xl text-zinc-800 text-left md:text-center lg:text-left">
@@ -114,9 +128,9 @@ const Home = () => {
         <div className="text-center text-3xl text-zinc-900 pb-4 font-semibold">
           What we offer
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-10 lg:w-[80%] mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center lg:gap-10 lg:w-[80%] mx-auto px-6">
           {homeData.map((i, index) => (
-            <div key={i.id} className="my-8 py-6 shadow-sm bg-white px-2">
+            <div key={i.id} className="my-8 py-6 bg-white px-2">
               <div className="flex align-center justify-center">
                 <div className="w-[70px] h-[70px] rounded-tl-[40px] rounded-br-[20px] flex align-center justify-center bg-green-400 pt-5">
                   <div className="">{i.tag}</div>
@@ -125,7 +139,7 @@ const Home = () => {
               <div className="text-zinc-800 text-[20px] cursor-pointer pt-4 text-center hover:text-green-600 transition-all ease font-semibold">
                 {i.title}
               </div>
-              <div className="pt-2 text-center md:text-center lg:text-center text-zinc-600 ">
+              <div className="pt-2 text-left md:text-center lg:text-left text-zinc-600 ">
                 {i.content}
               </div>
             </div>
