@@ -98,7 +98,6 @@ const Footer = () => {
             </div>
 
             <div className="font-normal text-zinc-700 py-2">
-              Lorem ipsum <br />
               <a href="mailto:info@grandelng.com">info@grandelng.com</a>
             </div>
             <div className="text-zinc-700 pt-2">Mon - Fri 8:00 - 17:00</div>

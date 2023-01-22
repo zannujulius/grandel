@@ -53,7 +53,7 @@ const Navbar = () => {
               className="cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
               to="/service"
             >
-              Service
+              Services
             </Link>
             <Link
               className="cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
