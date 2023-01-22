@@ -16,7 +16,13 @@ const AboutUs = () => {
   //     });
   //     return () => {};
   //   }, []);
-
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+    return () => {};
+  }, []);
   const [tabstate, settabstate] = useState(1);
   return (
     <Layout>

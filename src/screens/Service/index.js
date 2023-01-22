@@ -9,6 +9,14 @@ import Interested from "../../components/Interested";
 const Service = () => {
   const element = useRef(null);
   const typed = useRef(null);
+
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+    return () => {};
+  }, []);
   useEffect(() => {
     const options = {
       strings: [

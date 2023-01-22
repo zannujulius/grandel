@@ -8,7 +8,17 @@ import Interested from "../../components/Interested";
 import { Link } from "react-router-dom";
 import { homeData } from "./data";
 import { Bg } from "../../assets/svg";
+import { useEffect } from "react";
+
 const Home = () => {
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+    return () => {};
+  }, []);
+
   const Slider = () => {
     return (
       <Carousel
