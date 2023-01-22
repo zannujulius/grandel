@@ -116,7 +116,12 @@ const Home = () => {
               You can count on us today for a better future
             </div>
             <div className="pt-10">
-              <div className="bg-green-400 text-white px-8 py-4 rounded-[50px] w-[fit-content] ">
+              <div
+                className="bg-green-400 text-white px-8 py-4 rounded-[50px] w-[fit-content] "
+                onClick={() => {
+                  window.screenTop(100);
+                }}
+              >
                 Reach out to us
               </div>
             </div>
