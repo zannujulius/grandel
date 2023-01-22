@@ -35,7 +35,7 @@ const Navbar = () => {
             {/* Grandel<span className="text-green-600 ">.</span> */}
           </div>
 
-          <div className="brand text-2xl font-bold mx-2 text-zinc-700 hidden sm:hidden md:b lg:block ">
+          <div className="brand text-2xl font-semibold mx-2 text-zinc-700 hidden sm:hidden md:b lg:block ">
             Grandel Investment And Tech
             <span className="text-green-600 ">.</span>
             {/* Grandel<span className="text-green-600 ">.</span> */}

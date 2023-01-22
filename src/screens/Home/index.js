@@ -23,9 +23,7 @@ const Home = () => {
             <div className="w-[100px] h-[100px] rounded-full border-1 border-teal-800 bg-teal-700 hidden"></div>
             <div className="">
               <div className="text-left text-xl font-semibold leading-[40px] text-zinc-600">
-                <span className="font-semibold text-4xl">“</span>ustry. Lorem
-                Ipsum has been the industry Lorem Ipsum is simply dummy text of
-                the printing and typesetting ind's{" "}
+                <span className="font-semibold text-4xl">“</span>A good{" "}
                 <span className="font-semibold text-4xl">”</span>
               </div>
               <div className="flex pt-2">
@@ -51,15 +49,15 @@ const Home = () => {
   return (
     <Layout className="">
       {/* hero */}
-      <div className="pt-[150px] lg:pt-[200px] lg:h-[80vh] relative overflow-hidden">
+      <div className="pt-[100px] lg:pt-[200px] lg:h-[80vh] relative overflow-hidden">
         <Bg className="absolute lg:top-[-300px] right-[-100px] rotate-45 top-[-500px] " />
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap:20 lg:w-[80%] mx-auto px-6 ">
-          <div className="">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6 ">
+          <div className="pt-10">
             <div className="text-5xl leading-[60px] text-left md:text-center lg:text-left text-zinc-800 font-semibold">
-              Make best financial investment with us at{" "}
+              Make data drive business decision with us at{" "}
               <span className="text-green-300 font-semibold">Grandel</span>
             </div>
-            <div className="font-semibold text-zinc-400 pt-8 text-2xl">
+            <div className="font-semibold text-zinc-400 pt-8 text-2xl hidden">
               Lorem Ipsum is simply dummy text of the printing and typesetting
             </div>
 
@@ -73,7 +71,7 @@ const Home = () => {
             </div>
           </div>
           <div className="mt-10 lg:mt-0">
-            <div className="h-[400px] bg-white drop-shadow-sm border rounded-lg border-teal-500 overflow-hidden">
+            <div className="h-[400px] bg-white drop-shadow-sm border rounded-lg border-zinc-300 overflow-hidden">
               <img
                 src={
                   "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGFkdmljZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
@@ -152,7 +150,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-32 mb-10">
+      <div className="mt-32 mb-10 hidden">
         <div className="flex align-center justify-center ">
           <Slider />
         </div>

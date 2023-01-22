@@ -44,7 +44,7 @@ const AboutUs = () => {
           </Link>
         </div>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6 mt-10">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-20 lg:w-[80%] mx-auto px-6 mt-10 hidden">
         <div className="h-[620px] bg-white border-4 border-zinc-200 drop-shadow-md rounded-lg overflow-hidden  animate__animated animate__fadeInLeft">
           <img
             src={
@@ -55,9 +55,9 @@ const AboutUs = () => {
             alt="ceo img"
           />
         </div>
-        <div className="pt-20 animate__animated animate__fadeInRight">
+        <div className="pt-20 animate__animated animate__fadeInRight ">
           <div className="text-5xl text-zinc-700 font-semibold">
-            At <span className="text-green-400">Grandel.</span>
+            At <span className="text-green-400">GIT.</span>
           </div>
           <div className="flex pt-6">
             <div
