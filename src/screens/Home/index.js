@@ -139,12 +139,10 @@ const Home = () => {
             <div className="text-3xl text-white font-semibold">
               Interested in working with us?
             </div>
-            <div className="pt-2 text-zinc-100">
-              Hit the button below or give us a call!
-            </div>
+            <div className="pt-2 text-zinc-100">Send us a mail</div>
           </div>
           <div className="text-left pt-4  md:text-center  text-white text-4xl">
-            +(245)235234252
+            <a href="mailto:info@grandelng.com">info@grandelng.com</a>
           </div>
         </div>
       </div>

@@ -6,18 +6,25 @@ const Footer = () => {
   return (
     <div className="w-full px-8 py-6 lg:p-16 ">
       <div className="w-90% lg:w-[85%] mx-auto ">
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 lg:gap-16">
           <div className="">
             <div className="">
               <div className=""></div>
               <div className="font-bold text-zinc-700 text-lg">Contact Us</div>
             </div>
-            <div className="font-semibold  text-green-500 text-lg pt-2">
-              (+12343455)
-            </div>
+            <a
+              href="tel:+2348033962100"
+              className="d-block font-semibold text-1xl text-green-400"
+            >
+              +(234)8033962100
+            </a>
             <div className="font-normal text-zinc-700 py-2">
-              Address of your company in germany. POB 102. Mark Street <br />
-              <a href="mailto=grandel@gmail.com">grandel@gmail.com</a>
+              Grandel Investment and Tech Ltd 21/25 Investment House, Broad
+              Street, Lagos Island. <br />
+              <a href="mailto:info@grandelng.com" className="d-block">
+                info@grandelng.com
+              </a>
+              <br />
             </div>
             <div className="text-zinc-700 pt-2">Mon - Fri 8:00 - 17:00</div>
           </div>
@@ -92,7 +99,7 @@ const Footer = () => {
 
             <div className="font-normal text-zinc-700 py-2">
               Lorem ipsum <br />
-              <a href="mailto=grandel@gmail.com">grandel@gmail.com</a>
+              <a href="mailto:info@grandelng.com">info@grandelng.com</a>
             </div>
             <div className="text-zinc-700 pt-2">Mon - Fri 8:00 - 17:00</div>
           </div>

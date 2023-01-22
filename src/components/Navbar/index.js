@@ -44,9 +44,9 @@ const Navbar = () => {
             </Link>
             <Link
               className="cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
-              to="/services"
+              to="/service"
             >
-              Services
+              Service
             </Link>
             <Link
               className="cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
@@ -55,12 +55,11 @@ const Navbar = () => {
               About
             </Link>
             <Link
-              className=" cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
+              className="hidden cursor-pointer mr-16 text-[15px] font-normal text-zinc-800 hover:text-primary transition-all p-2"
               to="/"
             >
               Contact Us
             </Link>
-
             <div className="px-8 font-light text-white py-3 rounded-[30px] drop-shadow-sm bg-green-500 cursor-pointer">
               Get started
             </div>
